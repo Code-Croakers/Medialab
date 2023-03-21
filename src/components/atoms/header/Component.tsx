@@ -7,7 +7,7 @@ export const Header = ():JSX.Element => {
         'display': "flex",
         "justifyContent": "center",
         "alignItems": "center",
-        "padding":"",
+        "padding":"0 24px 0 24px",
         "@media(min-width : 976px)":{
             "alignItems": "flex-start",
         }
@@ -20,7 +20,7 @@ export const Header = ():JSX.Element => {
 
     return(
         <>
-        <AppBar sx={styleHeader}> <img src="/logoPrimary.png" style={styleLogo} alt="logo Virtuele Helden"/></AppBar>
+        <AppBar position='static' sx={styleHeader}> <img src="/logoPrimary.png" style={styleLogo} alt="logo Virtuele Helden"/></AppBar>
         </>
     )
 }

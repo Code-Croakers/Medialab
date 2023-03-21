@@ -7,8 +7,8 @@ import { Header } from "./components/atoms/header/Component";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Header/>
+        <main>
         <PrimaryBtn />
         <img src={logo} alt="logo" />
         <p>
@@ -22,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        </main>
     </div>
   );
 }
