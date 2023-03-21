@@ -1,4 +1,3 @@
-import IconButton from '@mui/material/Button';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import Fab from '@mui/material/Fab';
 
@@ -12,6 +11,7 @@ export const SubmitBtn = ():JSX.Element => {
             'background': '#EBB60C'
         }
     }
+
     return(
         <>
             <Fab sx={style} color="primary" aria-label="Send message">
