@@ -2,13 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
+import { Header } from "./components/atoms/header/Component";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Header/>
         <PrimaryBtn />
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
