@@ -3,15 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
 import { InputField } from './components/atoms/inputField/Component';
+import { Header } from "./components/atoms/header/Component";
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <SubmitBtn/>
+      <Header />
+      <main>
+        <SubmitBtn />
         <PrimaryBtn children='Start nieuwe sessie' />
-        <InputField/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -24,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </main>
     </div>
   );
 }
