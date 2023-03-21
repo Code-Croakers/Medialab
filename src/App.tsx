@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
+import { InputField } from './components/atoms/inputField/Component';
 import { Header } from "./components/atoms/header/Component";
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
 import { TextBubble } from './components/atoms/textBubble/Component';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <main>
         <SubmitBtn />
         <PrimaryBtn children='Start nieuwe sessie' />
+        <InputField/>
         <div>
           <TextBubble children='bitch hello' sender='app' />
           <TextBubble 
