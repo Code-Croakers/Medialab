@@ -5,9 +5,6 @@ import TextField from '@mui/material/TextField';
 export const InputField = ():JSX.Element => {
     const style={
         'background': '#F3F1F1',
-        // '&:hover' : {
-        //     'background': '#E2E2E2'
-        // },
         'width': 1240,
         'maxWidth': '100%',
         'borderRadius': 200,
@@ -18,7 +15,6 @@ export const InputField = ():JSX.Element => {
     return(
         <>  
             <Box >
-                {/* <TextField sx={style}  fullWidth id="fullWidth" /> */}
                 <TextField sx={style}  fullWidth id="fullWidth" placeholder="Placeholder" variant='standard' InputProps={{ disableUnderline: true }}/>
             </Box>
         </>
