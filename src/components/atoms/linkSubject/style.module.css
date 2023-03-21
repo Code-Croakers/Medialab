@@ -1,0 +1,12 @@
+.a-linkSubject{
+    color: #B7B5B5;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.a-linkSubject:hover, .a-linkSubject:focus{
+    background: none;
+    text-decoration: underline;
+    color: #5F5F5F;
+}

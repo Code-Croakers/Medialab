@@ -4,12 +4,14 @@ import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
 import { Header } from "./components/atoms/header/Component";
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
+import { LinkSubject } from './components/atoms/linkSubject/Component';
 
 function App() {
   return (
     <div className="App">
         <Header/>
         <main>
+          <LinkSubject children="klik om meerdere onderwerpen te genereren" />
           <SubmitBtn/>
           <PrimaryBtn children='Start nieuwe sessie' />
           <img src={logo} className="App-logo" alt="logo" />
