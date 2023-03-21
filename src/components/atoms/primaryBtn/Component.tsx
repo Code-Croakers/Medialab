@@ -1,16 +1,30 @@
-import Button from '@mui/material/Button';
-import { red } from '@mui/material/colors';
+import Button from '@mui/material/Button'
 
-export const PrimaryBtn = ():JSX.Element => {
+interface Props{
+    children: string
+}
+
+export const PrimaryBtn = (props: Props):JSX.Element => {
     const style={
         'background': '#F5C326',
         '&:hover' : {
             'background': '#EBB60C'
         }
     }
+
+    const startNewSession = (): void => {
+        window.location.reload()
+    }
+
     return(
         <>
-        <Button sx={style} variant="contained">help</Button>
+            <Button 
+            sx={style} 
+            variant="contained" 
+            onClick={() => startNewSession()}
+            >
+                {props.children}
+            </Button>
         </>
     )
 }
