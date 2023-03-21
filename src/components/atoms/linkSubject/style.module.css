@@ -1,8 +1,10 @@
 .a-linkSubject{
+    background: none;
     color: #B7B5B5;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .a-linkSubject:hover, .a-linkSubject:focus{
