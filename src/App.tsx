@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
 import { InputField } from './components/atoms/inputField/Component';
+import { SubmitBtn } from './components/atoms/submitBtn/Component';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <SubmitBtn/>
         <PrimaryBtn children='Start nieuwe sessie' />
         <InputField/>
         <img src={logo} className="App-logo" alt="logo" />
