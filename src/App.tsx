@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
+import { TextBubble } from './components/atoms/textBubble/Component';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <SubmitBtn/>
         <PrimaryBtn children='Start nieuwe sessie' />
+        <TextBubble children='bitch hello'/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
