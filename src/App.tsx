@@ -6,6 +6,7 @@ import { InputField } from './components/atoms/inputField/Component';
 import { Header } from "./components/atoms/header/Component";
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
 
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <main>
         <SubmitBtn />
         <PrimaryBtn children='Start nieuwe sessie' />
+        <InputField/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
