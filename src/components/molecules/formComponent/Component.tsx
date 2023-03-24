@@ -10,10 +10,11 @@ export const FormComponent = (): JSX.Element => {
         'justifyContent': 'center',
         'gap': '8px',
         'alignItems': 'center',
-        'padding': '8px 16px',
+        'padding': '8px',
         'position': 'fixed',
         'bottom': 0,
-        '@media(min-width: 978px)': {
+        'background': 'white',
+        '@media(min-width: 976px)': {
             'gap': '24px',
             'padding': '16px 24px',
         }

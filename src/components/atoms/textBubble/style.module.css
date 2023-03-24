@@ -1,0 +1,27 @@
+.text-bubble {
+    display: block;
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    max-width: 80%;
+    padding: 16px;
+    margin: 0;
+    transition: all ease;
+}
+
+.bubble-app {
+    background: #F3F1F1;
+    border-radius: 24px 24px 24px 0;
+}
+
+.bubble-user {
+    align-self: flex-end;
+    background: #D2EAFD;
+    border-radius: 24px 24px 0 24px;
+}
+
+@media(min-width: 976px) {
+    .text-bubble {
+        max-width: 60%;
+    }
+}

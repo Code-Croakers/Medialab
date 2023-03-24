@@ -17,6 +17,7 @@ export const ConfirmationModal = (): JSX.Element => {
         'margin': 'auto',
         'borderRadius': '10px',
         'position': 'absolute',
+        'textAlign': 'center',
         'padding': '16px',
         '@media(min-width: 976px)': {
             'width': '411px',

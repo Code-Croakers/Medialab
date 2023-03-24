@@ -1,0 +1,9 @@
+.chat-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    height: calc(100% - 176px);
+    padding: 176px 24px 80px 24px ;
+    width: 100vw;
+    margin: 0;
+}

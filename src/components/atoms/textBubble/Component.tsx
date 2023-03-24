@@ -1,4 +1,6 @@
 import { Paper, Typography, TextField } from "@mui/material"
+import styles from './style.module.css'
+import clsx from 'clsx';
 
 interface Props{
     children: string
@@ -6,31 +8,26 @@ interface Props{
 }
 
 export const TextBubble = (props: Props):JSX.Element => {
-    const stylePaper = {
-        'display': 'flex',
-        'justifyContent': props.sender === 'app' ? 'flex-start' : 'flex-end',
-        'textAlign': 'left',
-        'height': 'fit-content',
-        'width': 'fit-content',
-        'maxWidth': '50%',
-        'padding': '16px',
-        'margin': '0',
-        'background': props.sender === 'app' ? '#F3F1F1' : '#D2EAFD',
-        'borderRadius' : props.sender === 'app' ? '24px 24px 24px 0' : '24px 24px 0 24px'
-    }
-
-    const styleP = {
+    const style = {
         'fontSize': '16px',
         'padding' : '0',
         'margin' : '0'
     }
+
+    const getBubbleStyle = () => {
+        if(props.sender === 'user'){ 
+            return styles['bubble-user']
+        } else {
+            return styles['bubble-app']
+        }
+    }
     return(
         <>
-            <Paper sx={stylePaper}>
-                <Typography sx={styleP}>
+            <div className={clsx(styles['text-bubble'], getBubbleStyle())}>
+                <Typography sx={style}>
                     {props.children}
                 </Typography>
-            </Paper>
+            </div>
         </>
     )
 }

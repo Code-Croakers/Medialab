@@ -1,12 +1,15 @@
-import SendRoundedIcon from '@mui/icons-material/SendRounded';
+import { ReactComponent as SendIcon } from '../../../images/send_icon.svg';
 import Fab from '@mui/material/Fab';
-
 
 export const SubmitBtn = ():JSX.Element => {
     const style={
+        'display': 'flex',
+        'flexFlow': 'row nowrap',
+        'justifyContent': 'center',
+        'alignItems': 'center',
+        'height': '40px',
+        'width': '40px',
         'background': '#F5C326',
-        'width': 38,
-        'height': 38,
         '&:hover' : {
             'background': '#EBB60C'
         }
@@ -14,8 +17,8 @@ export const SubmitBtn = ():JSX.Element => {
 
     return(
         <>
-            <Fab sx={style} color='primary' aria-label='Send message'>
-                <SendRoundedIcon />
+            <Fab sx={style} aria-label='Send message'>
+                <SendIcon />
             </Fab>
         </>
     )
