@@ -6,6 +6,8 @@ import { LinkSubject } from './components/atoms/linkSubject/Component';
 import { TextBubble } from './components/atoms/textBubble/Component';
 import { Hero } from './components/molecules/hero/Component';
 import { FormComponent } from './components/molecules/formComponent/Component';
+import { ConfirmationModal } from './components/molecules/confirmationModal/Component';
+import { ModalBtn } from './components/atoms/modalButton/Component';
 
 
 function App() {
@@ -13,23 +15,26 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Hero variant='success'/>
+        <Hero variant='success' />
         <LinkSubject children="klik om meerdere onderwerpen te genereren" />
-        <PrimaryBtn children='Start nieuwe sessie' />
+        <ModalBtn children='Start nieuwe sessie' />
+        <div id='newSessionModal' className='displayNone'>
+          <ConfirmationModal/>
 
+        </div>
         <div>
           <TextBubble children='bitch hello' sender='app' />
-          <TextBubble 
+          <TextBubble
             children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-            officia deserunt mollit anim id est laborum." 
+            officia deserunt mollit anim id est laborum."
             sender='user' />
         </div>
-      
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -41,7 +46,7 @@ function App() {
         >
           Learn React
         </a>
-        <FormComponent/>
+        <FormComponent />
       </main>
     </div>
   );
