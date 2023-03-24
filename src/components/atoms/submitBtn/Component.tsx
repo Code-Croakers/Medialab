@@ -14,7 +14,7 @@ export const SubmitBtn = ():JSX.Element => {
 
     return(
         <>
-            <Fab sx={style} color="primary" aria-label="Send message">
+            <Fab sx={style} color='primary' aria-label='Send message'>
                 <SendRoundedIcon />
             </Fab>
         </>

@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { PrimaryBtn } from './components/atoms/primaryBtn/Component';
-import { InputField } from './components/atoms/inputField/Component';
-import { Header } from "./components/atoms/header/Component";
-import { SubmitBtn } from './components/atoms/submitBtn/Component';
+import { Header } from './components/atoms/header/Component';
 import { LinkSubject } from './components/atoms/linkSubject/Component';
 import { TextBubble } from './components/atoms/textBubble/Component';
+import { Hero } from './components/molecules/hero/Component';
 import { FormComponent } from './components/molecules/formComponent/Component';
 
 
@@ -14,9 +13,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
+        <Hero variant='success'/>
         <LinkSubject children="klik om meerdere onderwerpen te genereren" />
         <PrimaryBtn children='Start nieuwe sessie' />
-       
+
         <div>
           <TextBubble children='bitch hello' sender='app' />
           <TextBubble 

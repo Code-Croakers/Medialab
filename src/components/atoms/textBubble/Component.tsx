@@ -8,7 +8,7 @@ interface Props{
 export const TextBubble = (props: Props):JSX.Element => {
     const stylePaper = {
         'display': 'flex',
-        'justify-content': props.sender === 'app' ? 'flex-start' : 'flex-end',
+        'justifyContent': props.sender === 'app' ? 'flex-start' : 'flex-end',
         'textAlign': 'left',
         'height': 'fit-content',
         'width': 'fit-content',

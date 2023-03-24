@@ -1,5 +1,5 @@
-import { InputField } from "../../atoms/inputField/Component"
-import { SubmitBtn } from "../../atoms/submitBtn/Component"
+import { InputField } from '../../atoms/inputField/Component'
+import { SubmitBtn } from '../../atoms/submitBtn/Component'
 import Box from '@mui/material/Box';
 
 export const FormComponent = (): JSX.Element => {
