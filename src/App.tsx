@@ -6,6 +6,7 @@ import { Header } from "./components/atoms/header/Component";
 import { SubmitBtn } from './components/atoms/submitBtn/Component';
 import { LinkSubject } from './components/atoms/linkSubject/Component';
 import { TextBubble } from './components/atoms/textBubble/Component';
+import { FormComponent } from './components/molecules/formComponent/Component';
 
 
 function App() {
@@ -14,9 +15,8 @@ function App() {
       <Header />
       <main>
         <LinkSubject children="klik om meerdere onderwerpen te genereren" />
-        <SubmitBtn />
         <PrimaryBtn children='Start nieuwe sessie' />
-        <InputField/>
+       
         <div>
           <TextBubble children='bitch hello' sender='app' />
           <TextBubble 
@@ -29,7 +29,7 @@ function App() {
             officia deserunt mollit anim id est laborum." 
             sender='user' />
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
+      
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -41,6 +41,7 @@ function App() {
         >
           Learn React
         </a>
+        <FormComponent/>
       </main>
     </div>
   );
