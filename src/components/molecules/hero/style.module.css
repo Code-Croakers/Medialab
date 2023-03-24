@@ -14,7 +14,7 @@
     width: 112px;
 }
 
-@media(min-width: 976) {
+@media(min-width: 976px) {
     .hero-wrapper{
         padding-right: 24px;
     }
