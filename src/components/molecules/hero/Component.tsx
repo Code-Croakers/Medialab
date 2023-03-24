@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import defaultAvatar from '../../../images/default.png'
 import loadingAvatar from '../../../images/thinking_roel.png'
 import successAvatar from '../../../images/thumbs_roel.png'
