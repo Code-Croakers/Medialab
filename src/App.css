@@ -10,3 +10,10 @@
   top: 0;
 }
 
+.displayNone{
+  display: none;
+}
+
+.displayBlock{
+  display: block;
+}
