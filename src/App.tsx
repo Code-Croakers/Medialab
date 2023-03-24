@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Hero />
+        <Hero variant='success'/>
         <LinkSubject children="klik om meerdere onderwerpen te genereren" />
         <SubmitBtn />
         <PrimaryBtn children='Start nieuwe sessie' />
