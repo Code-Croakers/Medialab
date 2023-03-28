@@ -23,7 +23,7 @@ export const SubmitBtn = ():JSX.Element => {
 
             let bubbleContent = document.createElement("p");
             bubbleContent.textContent = inputField.value;
-
+            inputField.value = "";
             chatBubble.appendChild(bubbleContent);
             chatBox?.appendChild(chatBubble);
         }
