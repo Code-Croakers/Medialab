@@ -44,6 +44,7 @@ export const SubmitBtn = ():JSX.Element => {
         'alignItems': 'center',
         'height': '40px',
         'width': '40px',
+        'minWidth': '40px',
         'background': '#F5C326',
         '&:hover' : {
             'background': '#EBB60C'
