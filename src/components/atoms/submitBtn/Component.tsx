@@ -1,7 +1,21 @@
 import { ReactComponent as SendIcon } from '../../../images/send_icon.svg';
 import Fab from '@mui/material/Fab';
+import { useEffect, useState } from 'react';
 
 export const SubmitBtn = ():JSX.Element => {
+    let inputField: HTMLInputElement | null;
+    const [inputValue, setInputValue] =  (useState<string>(""));
+
+    useEffect(() => {
+        inputField = window.document.querySelector('#inputField');
+    }, []);
+
+    const handleSubmit = () => {
+        if (inputField !== null) {
+            console.log(inputField.value);
+            }
+        }
+
     const style={
         'display': 'flex',
         'flexFlow': 'row nowrap',
@@ -17,7 +31,7 @@ export const SubmitBtn = ():JSX.Element => {
 
     return(
         <>
-            <Fab sx={style} aria-label='Send message'>
+            <Fab onClick={() => handleSubmit()} sx={style} aria-label='Send message'>
                 <SendIcon />
             </Fab>
         </>
