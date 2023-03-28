@@ -3,7 +3,7 @@ import styles from './style.module.css';
 
 export const ChatBox = (): JSX.Element => {
     return (
-        <div className={styles['chat-container']}>
+        <div className={styles['chat-container']} id="chatBox">
             <TextBubble children='bitch hello' sender='app' />
             <TextBubble
                 children='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

@@ -1,19 +1,32 @@
 import { ReactComponent as SendIcon } from '../../../images/send_icon.svg';
 import Fab from '@mui/material/Fab';
 import { useEffect, useState } from 'react';
+import { TextBubble } from '../../atoms/textBubble/Component'
+import './style.css'
 
 export const SubmitBtn = ():JSX.Element => {
     let inputField: HTMLInputElement | null;
+    let chatBox: HTMLElement | null;
     const [inputValue, setInputValue] =  (useState<string>(""));
 
     useEffect(() => {
         inputField = window.document.querySelector('#inputField');
+        chatBox = window.document.querySelector('#chatBox');
     }, []);
 
     const handleSubmit = () => {
         if (inputField !== null) {
-            console.log(inputField.value);
-            }
+            console.log(chatBox);
+            let chatBubble = document.createElement("div");
+            chatBubble.classList.add('text-bubble');
+            chatBubble.classList.add('bubble-user');
+
+            let bubbleContent = document.createElement("p");
+            bubbleContent.textContent = inputField.value;
+
+            chatBubble.appendChild(bubbleContent);
+            chatBox?.appendChild(chatBubble);
+        }
         }
 
     const style={
