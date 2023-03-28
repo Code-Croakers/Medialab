@@ -15,7 +15,7 @@ export const SubmitBtn = ():JSX.Element => {
     }, []);
 
     const handleSubmit = () => {
-        if (inputField !== null) {
+        if (inputField !== null && inputField.value.trim() !== ""){
             console.log(chatBox);
             let chatBubble = document.createElement("div");
             chatBubble.classList.add('text-bubble');
@@ -26,8 +26,16 @@ export const SubmitBtn = ():JSX.Element => {
             inputField.value = "";
             chatBubble.appendChild(bubbleContent);
             chatBox?.appendChild(chatBubble);
-        }
-        }
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                left: 0,
+                behavior: "smooth",
+              });
+            }
+            else if(inputField !== null && inputField?.value.trim() === ""){
+                inputField.value = "";
+            }
+    }
 
     const style={
         'display': 'flex',
