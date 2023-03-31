@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className='Navbar'>
         <Header />
-        <Hero variant='success'/>
+        <Hero variant='default'/>
       </div>
 
       <main>
