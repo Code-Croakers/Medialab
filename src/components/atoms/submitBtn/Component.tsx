@@ -6,7 +6,6 @@ import './style.css'
 export const SubmitBtn = (): JSX.Element => {
     let inputField: HTMLInputElement | null;
     let chatBox: HTMLElement | null;
-    const [inputValue, setInputValue] = (useState<string>(""));
 
     useEffect(() => {
         inputField = window.document.querySelector('#inputField');
@@ -17,9 +16,16 @@ export const SubmitBtn = (): JSX.Element => {
         let responseBubble = document.createElement("div");
         responseBubble.classList.add('text-bubble');
         responseBubble.classList.add('bubble-app');
-        let responseContent = document.createElement("p");
-        responseContent.textContent = "Spy X Family";
-        responseBubble.appendChild(responseContent);
+        
+        responseBubble.innerHTML = `
+            <p>Aan de hand van je huidige activiteiten heb ik de 
+            volgende thema's bedacht waar je over kan schrijven!</p>
+            <ol>
+                <li>Hoe was jou vakantie ervaring en waar moeten anderen rekening mee houden wanneer zij ook op wintersport willen?</li>
+                <li>Dingen die je hebt geleerd van connecties die je hebt gemaakt tijdens je vakantie</li>
+                <li>Inspireer anderen om nieuwe dingen op te pakken, want jij hebt ook leren snowboarden door vallen en opstaan</li>
+            </ol>
+            `
         chatBox?.appendChild(responseBubble);
         window.scrollTo({
             top: document.body.scrollHeight,
