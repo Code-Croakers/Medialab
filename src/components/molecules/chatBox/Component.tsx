@@ -11,7 +11,7 @@ export const ChatBox = (): JSX.Element => {
     }
 
     const ReturnSecondMsg = ():JSX.Element =>{
-        return <TextBubble children='Wat waren je recente activiteiten?' sender='app' />
+        return <TextBubble children='Zou je mij kunnen vertellen over je recente activiteiten?' sender='app' />
     }
 
     useEffect(()=>{
