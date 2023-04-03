@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { Backdrop, Button, Fab } from '@mui/material'
 import { PrimaryBtn } from '../../atoms/primaryBtn/Component';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export const ConfirmationModal = (): JSX.Element => {
     let target: HTMLElement | null
