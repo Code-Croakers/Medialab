@@ -1,4 +1,4 @@
-import { Paper, Typography, TextField } from "@mui/material"
+import { Typography } from "@mui/material"
 import styles from './style.module.css'
 import clsx from 'clsx';
 
@@ -21,6 +21,7 @@ export const TextBubble = (props: Props):JSX.Element => {
             return styles['bubble-app']
         }
     }
+    
     return(
         <>
             <div className={clsx(styles['text-bubble'], getBubbleStyle())}>

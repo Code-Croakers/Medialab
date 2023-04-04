@@ -1,4 +1,4 @@
-import { Button, Fab } from '@mui/material'
+import { Button } from '@mui/material'
 
 interface Props {
     children?: string
@@ -15,7 +15,6 @@ export const PrimaryBtn = (props: Props): JSX.Element => {
 
     const startNewSession = (): void => {
         window.location.reload()
-        console.log('reload page')
     }
 
     return (

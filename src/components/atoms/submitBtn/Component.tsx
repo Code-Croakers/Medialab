@@ -1,6 +1,6 @@
 import { ReactComponent as SendIcon } from '../../../images/send_icon.svg';
 import Fab from '@mui/material/Fab';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './style.css'
 
 export const SubmitBtn = (): JSX.Element => {
